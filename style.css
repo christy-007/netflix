@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins',sans-serif ;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: black;
+    color: #ffffff;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+    background-image:linear-gradient(to top, rgba(0, 0, 0, 0.8) 0,  rgba(0, 0, 0, 0.8) 100%),url(Resources/bg.jpg)
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 0 ;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+nav button{
+    border: 0;
+    outline: 0;
+    background:#db0001 ;
+    color:white ;
+    padding: 7px 20px ;
+    font-size: 12px;
+    border-radius: 4px;
+    margin:10px ;
+    cursor: pointer;
+
+}
+.lang-btn{
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid white;
+    background-color: transparent;
+    padding: 7px 10px;
+
+
+}
+.header-content{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+
+
+
+}
+.header-content h1{
+    font-size: 3rem;
+    font-weight: 900;
+    min-width: 960px;
+
+}
+.header-content p{
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+    
+
+}
+.email{
+    background: #fff;
+    border-radius:4px ;
+    display: flex;
+    align-items: center;
+    margin:30px ;
+    overflow: hidden;
+}
+.email input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left:20px ;
+
+}
+.email button{
+    background:#db0001 ;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+
+}
+
+/*--------------------features----------------------------*/
+.features{
+    padding: 50px 12%;
+    font-size: 22px;
+
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+
+}
+.text-column{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+
+}
+.img-column{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+
+}
+.img-column img{
+    display: block;
+    width: 90%;
+    margin: auto;
+
+}
+.features h2{
+    font-size: 50px;
+    font-weight:600 ;
+    margin-bottom: 20px;
+}
+/*-----------------Frequently Asked Questions------------------------*/
+
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+.faq h2{
+    font-weight: 500px; 
+    font-size: 40px;
+
+
+}
+
+.accordion{
+    margin:60px auto;
+    width: 100%;
+    max-width: 750px;
+
+
+}
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    cursor: pointer;
+    position: relative;
+
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transform: 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordion .content{
+    background: #303030;
+    text-align: left;
+    padding:0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s,padding 0.5s;
+
+}
+.accordion input[type="radio"]:checked + label +.content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.accordion input[type="radio"]:checked + label ::after{
+    transform: rotate(60deg)
+}
+.faq .email{
+    max-width: 600px;
+    margin:20px auto 60px;
+}
+.faq small{
+    font-size: 30px;
+}
+/* -----------------footer--------------- */
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid#333;
+    color: #777;
+
+}
+.footer h2{
+    font: size 18px; 
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.footer .col{
+    flex-basis:25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+
+}
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom:10px ;
+}
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+}
+.footer .lang-btn{
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+.copyright{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* ---------------media-queries---------- */
+@media only screen and (max-width:600px){
+    
+
+}
+    
